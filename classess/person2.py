@@ -28,7 +28,7 @@ class Manager(Person):
 
 
 
-
+"""
 bob = Person(name = "John Smith")
 sue = Person(name = "Sue Denover",job = "Dev",pay = 1000)
 
@@ -39,7 +39,7 @@ print sue.pay
 print bob.lastname()
 
 print sue
-
+"""
 
 """tom = Manager('Tom Jones', 'mgr', 50000)
 tom.giveRaise(0.10)
