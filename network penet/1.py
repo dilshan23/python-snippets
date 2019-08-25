@@ -6,12 +6,12 @@ import socket  #import module
 
 socket.setdefaulttimeout(9)
 
-s = socket.socket() #make a variable from the class socket
+s = socket.socket() #make a variable/object from the class socket
 
 #Once successfully connected, we can read and write from the socket. 
 
 
-s.connect(("127.0.0.1",8000))
+s.connect(("192.168.95.148",21))
 
 ans = s.recv(1024)
 
