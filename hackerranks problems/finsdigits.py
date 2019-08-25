@@ -37,23 +37,38 @@ def findDigits(n):
 
 	#remove duplicates
 
-	digits1 = []
-
-	for i in digits:
-		if i not in digits1:
-			digits1.append(i)
+	"""digits1 = []
+			
+				for i in digits:
+					if i not in digits1:
+						digits1.append(i)"""
 
 
 	#print digits
 
 
 
-	if '0' in digits1:
-		digits1.remove('0')
+	for i in range(len(digits)):
 
-		for i in range(len(digits1)):
-			if n % int(digits1[i]) == 0:
-				count += 1
+		try:
+			if n % int(digits[i]) == 0:
+				count += 1	
+
+		except Exception,e:
+			continue
+
+
+
+
+
+			
+
+
+
+			
+
+
+
 
 		
 			
@@ -61,11 +76,6 @@ def findDigits(n):
 
 				
 
-	else:
-		for j in range(len(digits1)):
-			if n % int(digits1[j]) == 0:
-
-				count += 1
 
 		
 
@@ -94,5 +104,16 @@ def findDigits(n):
 
 
 
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-print findDigits(1012)
+    t = int(input())
+
+    for t_itr in range(t):
+        n = int(input())
+
+        result = findDigits(n)
+
+        fptr.write(str(result) + '\n')
+
+    fptr.close()
