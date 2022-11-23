@@ -1,3 +1,6 @@
+
+#__str__ to return the card name as a string, and __gt__ and __lt__ to allow the cards to be compared against each other.
+
 class Card:
     def __init__(self,value,suit):
         self.value = value
