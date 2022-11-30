@@ -6,7 +6,7 @@
 class Shape:
   def __new__(cls,sides,*args,**kwargs):
     if slides == 3:
-      return Triangle(*args,""kwargs)
+      return Triangle(*args,**kwargs)
     else:
       return Square(*args,**kwargs)
 
