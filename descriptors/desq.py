@@ -1,5 +1,7 @@
 #why --- type validatins
 
+##### -------Poweful wayto "acces" atrtributes --------- ++++++
+
 #class that implements __get_(), __set()_, or __delete()_ function of a descriptor protocol for an object is classified as a “Descriptor”.
 
 #How to Use Descriptors
